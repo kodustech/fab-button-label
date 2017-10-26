@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <ion-fab bottom right>
+    <button ion-fab mini (click)="showMenuItems()"><ion-icon name="add"></ion-icon></button>
+    
+    <ion-fab-list side="top">
+      <button ion-fab (click)="alertMe('Facebook')"><ion-icon name="logo-facebook"></ion-icon></button>
+      <button ion-fab (click)="alertMe('Twitter')"><ion-icon name="logo-twitter"></ion-icon></button>
+      <button ion-fab (click)="alertMe('Vimeo')"><ion-icon name="logo-vimeo"></ion-icon></button>
+      <button ion-fab (click)="alertMe('Google +')"><ion-icon name="logo-googleplus"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <div class="labelContainer" *ngIf="showMenuItem">
+    <div class="container">
+      <div class="label">Google +</div>
+      <div class="label">Vimeo</div>
+      <div class="label">Twitter</div>
+      <div class="label">Facebook</div>
+    </div>
+  </div>
+</ion-content>
