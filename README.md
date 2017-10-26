@@ -1,3 +1,3 @@
 # fab-button-label
 
-![alt text](https://imgur.com/a/caLqJ)
+![alt text](https://i.imgur.com/IS0ru0o.png)
